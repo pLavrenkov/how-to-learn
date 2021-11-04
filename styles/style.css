@@ -1,0 +1,352 @@
+/* шрифты */
+.font-title {
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: bold;
+  color: #000;
+}
+
+.font-subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  color: #000;
+}
+
+.font-text {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  color: #000;
+}
+
+.font-title_table {
+  font-size: 60px;
+  line-height: 1.15em;
+  font-weight: bold;
+  color: #000;
+}
+
+.font-subtitle_table {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  color: #000;
+}
+
+.font_table-cell_title {
+  font-size: 24px;
+  line-height: 1.15em;
+  font-weight: bold;
+ }
+
+.font_table-cell_text {
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: normal;
+ }
+
+.font__feynman_text {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.font_text-links {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.font_text-links_header {
+  font-weight: bold;
+}
+/* стили блоков */
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* селекторы для заголовка */
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  background-color: #f2f2f2;
+  padding-left: 64px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  position: relative;
+  /* выше установили ограничения для секции */
+}
+
+.logo {
+  width: 183px;
+  height: 32;
+  z-index: 2;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+}
+
+.header__title {
+  width: 730px;
+  z-index: 2;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  background-image: url('../images/header-image.png');
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+}
+
+/* блок Глаыные проблемы обучения */
+
+.description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.description__two-columns {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.two-columns__brief {
+  width: 175px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.two-columns__header {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 738px;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+}
+
+.two-columns__paragraph_margin {
+  margin: 30px 0;
+}
+
+.two-columns__span-accient {
+  font-weight: bold;
+}
+
+/* раздел Цифры и факты */
+.digits {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  width: 60%;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  margin: 0;
+}
+
+.section-subtitle__name {
+  text-align: center;
+  margin: 0;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__cell {
+  width: 250px;
+  margin: 60px 0 0;
+}
+
+.table__heading {
+  margin: 0 0 20px;
+}
+
+.table__text {
+  margin: 0;
+}
+
+.table__text_added {
+  margin: 20px 0 0;
+
+}
+
+/* раздел Метод Феймана */
+.feynman {
+  margin: 0 auto 0;
+  position: relative;
+  height: 890px;
+  background-color: #f2f2f2;
+  background-image: url('../images/feynman.png');
+  background-position: bottom left;
+  background-size: 867px 637px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.feynman__title {
+  width: 648px;
+  margin: 100px auto 70px;
+  text-align: center;
+  font-size: 120px;
+  line-height: 1.15em;
+}
+
+.feynman__subtitle {
+  margin: 0;
+  text-align: center;
+  align-self: center;
+}
+
+.feynman__link {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  text-align: right;
+  margin: 0 40px 0 0;
+}
+
+/* раздел Принципы обучения (Кауфман) */
+.kaufman {
+  background-color: #1f1f1f;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px;
+  z-index: 0;
+  overflow: hidden;
+ }
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+.table__text_theme_dark {
+  color: white;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  bottom: 210px;
+  right: -210px;
+  z-index: -1;
+}
+
+.kaufman__pic {
+  width: 100%;
+}
+
+/* раздел Подвал */
+.footer {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0 40px;
+}
+.footer__columns {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+}
+
+.footer__author {
+  margin: 18px 0;
+  font-size: 18px;
+  line-height: 25px;
+}
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+
+}
+
+.social_icon {
+  margin-right: 10px;
+}
