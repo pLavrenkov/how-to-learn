@@ -4,6 +4,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
+  transition: ease 3s;
 }
 
 .footer__column-link:hover {
